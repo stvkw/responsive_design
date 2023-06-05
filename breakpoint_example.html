@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>breakpoints</title>
+    <style>
+	.boxColor {
+	   padding: 10px;
+	   color: white;
+	   font-weight: bold;
+	}
+	@media screen and (min-width: 961px)
+        {
+           .boxColor { background: gray;  }
+        }
+	@media screen and (max-width: 960px)  
+        {
+           .boxColor { background: red;   }
+        }
+	@media screen and (max-width: 768px)
+        {
+           .boxColor { background: green; }
+        }
+	@media screen and (max-width: 600px)
+        {
+           .boxColor { background: blue;  }
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <p>
+     Responsive design using breakpoints lets webpages size up to the device type, e.g., desktop, tablets, mobile phones. 
+     When a breakpoint is reached, the webpage adjusted to that max/min pixel range using a defined style css. 
+     Bootstrap is similar with their grid tier.
+    </p>
+    <p class="boxColor">
+      Change box color by resizing the screen.
+    </p>
+
+  </body>
+</html>
